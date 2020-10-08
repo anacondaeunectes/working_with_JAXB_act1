@@ -4,9 +4,9 @@
         <codigocentro>2778432</codigocentro>
         <nombrecentro>Escuelas del Norte</nombrecentro>
         <direccion>C/ Girasol</direccion>
-        <director>
-            <codigoprofesor>102</codigoprofesor>
-            <nombreprofesor>Anabel Ramos</nombreprofesor>
+        <director codigo="113">
+            <codigoprofesor>113</codigoprofesor>
+            <nombreprofesor>Isabel Moncada</nombreprofesor>
         </director>
     </centro>
     <profesores>
@@ -18,8 +18,8 @@
             <codigoprofesor>102</codigoprofesor>
             <nombreprofesor>Anabel Ramos</nombreprofesor>
         </profesor>
-        <profesor>
-            <codigoprofesor>103</codigoprofesor>
+        <profesor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="directorType" codigo="113">
+            <codigoprofesor>113</codigoprofesor>
             <nombreprofesor>Isabel Moncada</nombreprofesor>
         </profesor>
     </profesores>
