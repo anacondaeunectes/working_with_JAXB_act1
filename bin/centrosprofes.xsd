@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+	<xsd:element name="datoscentro" type="datoscentroType"/>
+	
+	<xsd:complexType name="datoscentroType">
+		<xsd:sequence>
+			<xsd:element name="centro" type="centroType"/>
+			<xsd:element name="profesores" type="profesoresType"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="centroType">
+		<xsd:sequence>
+			<xsd:element name="codigocentro" type="xsd:integer"/>
+			<xsd:element name="nombrecentro" type="xsd:string"/>
+			<xsd:element name="direccion" type="xsd:string"/>
+			<xsd:element name="director" type="profesorType"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="profesoresType">
+		<xsd:sequence>
+			<xsd:element name="profesor" type="profesorType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="profesorType">
+		<xsd:sequence>
+			<xsd:element name="codigoprofesor" type="xsd:integer"/>
+			<xsd:element name="nombreprofesor" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+</xsd:schema>
